@@ -95,6 +95,8 @@ Ted Laderas, PhD {#title}
 
 **Researcher**, OHSU Knight Cancer Institute
 
+Oregon Health & Science University
+
 ```{r}
 # Note the special double pipe so we modify the CV object in place
 CV %<>% print_text_block("intro") 
