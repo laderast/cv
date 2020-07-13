@@ -81,10 +81,6 @@ CV %>% print_skill_bars()
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
-
-The source code is available [on github.com/laderast/cv](https://github.com/laderast/cv).
-
 Last updated on `r Sys.Date()`.
 
 
@@ -105,15 +101,14 @@ CV %<>% print_text_block("intro")
 ```
 
 
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
+
+
 
 ```{r}
 CV %<>% print_section('education')
 ```
-
-
 
 Software {data-icon=laptop}
 --------------------------------------------------------------------------------
@@ -122,15 +117,26 @@ Software {data-icon=laptop}
 CV %<>% print_section("software")
 ```
 
+Education {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+### Education Statement
+
+N/A
+
+N/A
+
+N/A
+
+Effective communication, hands-on learning, and mentoring are core to my teaching philosophy. I am a strong believer in enabling students in self-directed learning through hands-on workshops including both practical skills in bioinformatics (software development, design, and data analysis and visualization) and social skills essential to collaboration (interpretation and communication). In terms of practical skills, I have developed and contributed to a number of courses (Analytics, RBootcamp, Network Analysis, and BD2K skills courses) and workshops in a large variety of software development and communication topics. These topics include software design, interactive visualization, exploratory data analysis, and presentation of results. 
+
+In terms of fostering social and collaborative skills in students, I am a founder and co-leader of BioData-Club, a collaborative forum for students and postdocs to share and teach each other practical skills for success in a research environment. Through BioData Club, I have informally mentored a number of students through feedback and collaboration on workshops and presentations. I believe that by “training the trainers”, we can more effectively educate students in these skills in Data Science and Analytics. 
+
+In order to accomplish this training of trainers, my course materials are openly available for use and modification by other teachers. Because of my dedication to teaching and incorporation of student feedback, I have consistently high ratings from students in terms of teaching both long-form courses and short-term workshops.
+
 
 Courses {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
-
-::: aside
-```{r}
-CV %<>% print_text_block('teaching_experience_aside')
-```
-:::
 
 ```{r}
 CV %<>% print_section("course")
@@ -145,15 +151,25 @@ CV %<>% print_section("educational_resource")
 ```
 
 
+Research {data-icon=flask}
+--------------------------------------------------------------------------------
+
+### Research Statement
+
+N/A
+
+N/A
+
+N/A
+
+My research interests are complex diseases, precision medicine, applications of systems science (including network analysis and modeling), and applying data integration to difficult and high-impact translational research questions. These questions include immune system profiling in both infectious disease (tuberculosis) and Acute Myeloid Leukemia, understanding drug sensitivity in the context of multiple cancer types (AML, Colorectal, Breast and Head and Neck Cancer), and quantifying expression differences in alcoholic preference. I have worked with a large number of datatypes (high-throughput immunophenotyping, proteomics, expression, genomic, and functional drug screen data) and have focused on methods and frameworks integrating these datatypes within the biological and clinical context of these translational research questions. 
+
+My training in biomedical informatics as a master’s student in Biomedical Informatics, as an NLM Predoctoral Fellow, and as a NLM Postdoctoral fellow has enabled me to communicate with a wide variety of collaborators by giving me a strong background in Cancer Biology, Software Development, and Clinical Systems. 
+Additionally, I am a strong advocate for Open Science initiatives, most notably the effort for reproducibility in scientific analysis. To this end, I have developed multiple novel software pipelines that transparently process data from raw data to through the final stages of analysis.
+
 
 Selected Publications, Posters, and Talks {data-icon=book}
 --------------------------------------------------------------------------------
-
-::: aside
-```{r}
-CV %<>% print_text_block('research_experience_aside')
-```
-:::
 
 ```{r}
 CV %<>% print_section('academic_articles')
@@ -173,6 +189,23 @@ CV %<>% print_text_block('data_science_writing_aside')
 CV %<>% print_section('data_science_writings')
 ```
 
+
+Service {data-icon=info-circle}
+--------------------------------------------------------------------------------
+
+### Service Statement
+
+N/A
+
+N/A
+
+N/A
+
+I am a strong supporter of service at OHSU and beyond. I currently participate in the DMICE BCB (Bioinformatics and Computational Biology) Faculty Division meeting, the DMICE Mentoring committee, and have participated in the BCB Curriculum Retreat in order to plan upcoming coursework at DMICE. As a Pacific Islander, I have a unique viewpoint about diversity and have dedicated myself to making classes and workshops psychologically safe. 
+
+Beyond OHSU, I believe that we need to increase public engagement of science and increase outreach and mentoring of next-generation science students, especially from disadvantaged populations will enable these students to succeed in STEM-based careers. 
+
+As a former student of Saturday Academy’s scientific mentoring program, I want to contribute back to this community and engage potential STEM students through student outreach and mentoring. I am also involved in outreach through the development of course material for the Biocatalyst training program through Oregon Bioscience Association, which provides bioscience training for unemployed or under-employed professionals.
 
 
 Selected Press (About)  {data-icon=newspaper}
@@ -203,7 +236,6 @@ Positions and Work Experience {data-icon=laptop}
 ```{r}
 CV %<>% print_section('positions')
 ```
-
 
 ```{r}
 CV %<>% print_links()
