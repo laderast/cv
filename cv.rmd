@@ -210,6 +210,15 @@ Beyond OHSU, I believe that we need to increase public engagement of science and
 
 As a former student of Saturday Academy’s scientific mentoring program, I want to contribute back to this community and engage potential STEM students through student outreach and mentoring. I am also involved in outreach through the development of course material for the Biocatalyst training program through Oregon Bioscience Association, which provides bioscience training for unemployed or under-employed professionals.
 
+Service History and Accomplishments
+----------------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('service')
+```
+
+
+
 
 Selected Press (About)  {data-icon=newspaper}
 --------------------------------------------------------------------------------
