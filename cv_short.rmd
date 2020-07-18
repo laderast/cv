@@ -1,0 +1,146 @@
+---
+title: "CV of Ted Laderas, PhD"
+author: Ted Laderas
+date: "`r Sys.Date()`"
+params:
+  pdf_mode:
+    value: true
+output:
+  pagedown::html_resume:
+    css: ['dd_cv.css', 'resume']
+    self_contained: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+library(magrittr) # For the pipe
+source("cv_printing_functions.r")
+
+# Read in all data and initialize a CV printer object
+CV <- create_CV_object(
+  data_location = "https://docs.google.com/spreadsheets/d/1co40b1-0elS86Ttk77Kf8cEBGGjjiSaNLohtgZ5eRH4/edit?usp=sharing",  
+  pdf_mode = params$pdf_mode
+)
+
+CV$entries_data <- CV$entries_data %>%
+  dplyr::filter(in_resume == TRUE)
+
+```
+
+
+```{r}
+# When in pdf export mode the little dots are unaligned, so fix that with some conditional CSS.
+if(params$pdf_mode) {
+    cat("
+<style>
+:root{
+  --decorator-outer-offset-left: -6.5px;
+}
+</style>")
+}
+```
+
+
+Aside
+================================================================================
+
+```{r}
+# Build interactive network of positions colored by section
+# and connected if they occurred in the same year
+#datadrivencv::build_network_logo(CV$entries_data)
+```
+
+
+```{r}
+if(params$pdf_mode){
+  cat("View this CV online with links at _laderast.github.io/cv_")
+} else {
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://laderast.github.io/cv/cv.pdf)")
+}
+```
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_contact_info()
+```
+
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Last updated on `r Sys.Date()`.
+
+
+
+Main
+================================================================================
+
+Ted Laderas, PhD {#title}
+--------------------------------------------------------------------------------
+
+**Assistant Professor**, Division of Bioinformatics and Computational Biology, Department of Medical Informatics and Clinical Epidemiology, Oregon Health & Science University
+
+I am passionate about teaching students to think about data and utilize open science workflows. I have taught Data Science to a variety of groups, including graduate students, post-docs, staff, and clinicians. I am also an RStudio Certified Trainer in both the `tidyverse` and `Shiny`.
+
+Selected Courses {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section("course")
+```
+
+
+Educational Resources {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section("educational_resource")
+```
+
+
+Research {data-icon=flask}
+--------------------------------------------------------------------------------
+
+
+Selected Publications, Posters, and Talks {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('academic_articles')
+```
+
+
+Selected Data Science Writing {data-icon=chart-line}
+--------------------------------------------------------------------------------
+
+::: aside
+```{r}
+CV %<>% print_text_block('data_science_writing_aside')
+```
+:::
+
+```{r}
+CV %<>% print_section('data_science_writings')
+```
+
+Service History and Accomplishments
+----------------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('service')
+```
+
+
+Positions and Work Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('positions')
+```
+
