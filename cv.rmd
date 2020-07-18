@@ -218,30 +218,6 @@ CV %<>% print_section('service')
 ```
 
 
-
-
-Selected Press (About)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-#CV %<>% print_section('about_me_press')
-```
-
-
-<br>
-<br>
-
-
-Selected Press (By)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-#CV %<>% print_section('by_me_press')
-```
-
-
-
-
 Positions and Work Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
@@ -249,7 +225,20 @@ Positions and Work Experience {data-icon=laptop}
 CV %<>% print_section('positions')
 ```
 
+Current Support 
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('funding_current')
+```
+
+Completed Support
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('funding_complete')
+```
+
 ```{r}
 CV %<>% print_links()
 ```
-
