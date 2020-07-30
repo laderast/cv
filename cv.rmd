@@ -105,13 +105,12 @@ I am also passionate about teaching students to think about data, and have taugh
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-
 ```{r}
 CV %<>% print_section('education')
 ```
 
 
-Teaching {data-icon=chalkboard-teacher}
+Teaching {data-icon=chalkboard-teacher data-concise=true}
 --------------------------------------------------------------------------------
 
 ### Teaching Statement
@@ -122,38 +121,32 @@ N/A
 
 N/A
 
-Effective communication, hands-on learning, and mentoring are core to my teaching philosophy. I am a strong believer in enabling students in self-directed learning through hands-on workshops including both practical skills in bioinformatics (software development, design, and data analysis and visualization) and social skills essential to collaboration (interpretation and communication). In terms of practical skills, I have developed and contributed to a number of courses (Analytics, RBootcamp, Network Analysis, and BD2K skills courses) and workshops in a large variety of software development and communication topics. These topics include software design, interactive visualization, exploratory data analysis, and presentation of results. 
+I believe in democratizing data science. To this end, I have been involved with several national educational efforts: Big Data to Knowledge, National Library of Medicine's efforts with data science. My workshops, lectures and lessons have been utilized at multiple schools, and by multiple audiences, including clinicians, bioinformaticians, undergraduates. 
 
-In terms of fostering social and collaborative skills in students, I am a founder and co-leader of BioData-Club, a collaborative forum for students and postdocs to share and teach each other practical skills for success in a research environment. Through BioData Club, I have informally mentored a number of students through feedback and collaboration on workshops and presentations. I believe that by “training the trainers”, we can more effectively educate students in these skills in Data Science and Analytics. 
+I utilize evidence-based pedagogical techniques in my teaching, specifically active learning and psychological safety. I am a firm believer in making students feel psychologically safe and giving them space to be curious. Many of my students have become collaborators in my teaching materials, improving them with their ideas and their questions. As a result, my work has been recognized as being accessible to a wide audience.
 
-In order to accomplish this training of trainers, my course materials are openly available for use and modification by other teachers. Because of my dedication to teaching and incorporation of student feedback, I have consistently high ratings from students in terms of teaching both long-form courses and short-term workshops.
+I believe that we must give graduate students more transferrable skills, and so I have co-founded BioData Club, a community of practice at OHSU and beyond that focuses on teaching and learning data science skills. I am dedicated to my students, and courses and workshops show consistently high ratings and evaluations. I am also a certified instructor for both The Carpentries and RStudio. 
+
+In my educational work, I have focused on *Exploratory Data Analysis* (EDA) as a way to be curious and to not be afraid of your data, *Predictive Modeling and Data Analytics*, *interactive visualization*,*Open Science*, *Team Science*, and the importance of *interdisciplinary collaboration*. I am dedicated to making my work accessible and reproducible by others.
 
 
-Courses {data-icon=chalkboard-teacher}
+
+
+Courses {data-icon=chalkboard-teacher data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section("course")
 ```
 
-
-Educational Resources {data-icon=chalkboard-teacher}
+Educational Scholarship {data-icon=chalkboard-teacher data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section("educational_resource")
+CV %<>% print_section("educational_scholarship")
 ```
 
-
-Software {data-icon=laptop}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section("software")
-```
-
-
-Research {data-icon=flask}
+Research {data-icon=flask data-concise=true}
 --------------------------------------------------------------------------------
 
 ### Research Statement
@@ -169,6 +162,13 @@ My research interests are complex diseases, precision medicine, applications of 
 My training in biomedical informatics as a master’s student in Biomedical Informatics, as an NLM Predoctoral Fellow, and as a NLM Postdoctoral fellow has enabled me to communicate with a wide variety of collaborators by giving me a strong background in Cancer Biology, Software Development, and Clinical Systems. 
 
 Additionally, I am a strong advocate for Open Science initiatives, most notably the effort for reproducibility in scientific analysis. To this end, I have developed multiple novel software pipelines that transparently process data from raw data to through the final stages of analysis.
+
+Research Software/Intellectual Property {data-icon=laptop data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section("software")
+```
 
 
 Selected Publications, Posters, and Talks {data-icon=book}
